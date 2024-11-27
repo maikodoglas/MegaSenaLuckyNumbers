@@ -88,7 +88,7 @@ function preloadSongs(){
 function buildSlotWheels($container) {
 
     itemsArray.push(title);
-    const amount = 2800;
+    const amount = 140;
 
     for (let i = 0; i < amount; i++) {
         for (let participant of participants) {
