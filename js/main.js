@@ -119,17 +119,7 @@ function randomColor(){
 
 function rodaRoda() {
     spinStart();
-
-    var randomSpinNumber = randomItemIndex(spinParametersList.length);
-
-    while (lastSpinNumber === randomSpinNumber)
-        randomSpinNumber = randomItemIndex(spinParametersList.length);
-
-    var spinParameters = spinParametersList[randomSpinNumber];
-
-    spin(spinParameters[0], spinParameters[1], spinParameters[2], spinParameters[3]);
-
-    lastSpinNumber = randomSpinNumber;
+    spin(10000, "easeOutQuad", 0, songPiaoStorm);
 }
 
 function spinStart() {
